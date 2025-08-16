@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Best Loan Services in Sri Lanka • ශ්‍රී ලංකාවේ හොඳම ණය සේවා</title>
+<meta name="theme-color" content="#0b1020"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b1020;--panel:#121936;--text:#eaf1ff;--muted:#9eb0d6;
+    --stroke:rgba(255,255,255,.08);--cta:#ffd36b;--cta2:#ff985a;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; color:var(--text);
+    background:
+      radial-gradient(1100px 700px at 85% -10%,rgba(138,209,255,.14),transparent),
+      radial-gradient(900px 600px at 10% 120%,rgba(102,230,163,.10),transparent),
+      #0b1020;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:20px auto calc(120px + env(safe-area-inset-bottom));padding:0 16px}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(180deg,#121936,#0f1532);
+    border:1px solid var(--stroke); border-radius:18px; padding:18px;
+    display:flex; gap:14px; align-items:center; box-shadow:0 8px 36px rgba(0,0,0,.45)
+  }
+  .pill{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#66e6a3,#8ad1ff); color:#071a19;font-weight:900}
+  .title{margin:0;font-size:20px}
+  .sub{margin:4px 0 0;font-size:13px;color:var(--muted)}
+  .cta-row{margin-left:auto; display:flex; gap:10px; flex-wrap:wrap}
+  .btn{
+    appearance:none; border:1px solid var(--stroke); background:#141b3f; color:var(--text);
+    padding:10px 14px; border-radius:12px; font-weight:800; display:inline-flex; align-items:center; gap:8px; cursor:pointer
+  }
+  .btn.gold{background:linear-gradient(135deg,var(--cta),#ffe899); color:#0b0f1f; border:none}
+  .btn.orange{background:linear-gradient(135deg,var(--cta2),#ffb56b); color:#0b0f1f; border:none}
+
+  .note{
+    margin-top:12px; background:#1a2148; border:1px dashed rgba(255,255,255,.28); border-radius:14px;
+    padding:12px; color:#ffe1c6; display:flex; gap:10px; align-items:center; flex-wrap:wrap
+  }
+  .note b{color:#fff1dc}
+
+  /* GRID */
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px}
+  @media (max-width:1024px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.grid{grid-template-columns:1fr}}
+
+  .card{
+    background:linear-gradient(180deg,#121936,#0d1330); border:1px solid var(--stroke); border-radius:18px;
+    padding:14px; display:flex; gap:12px; min-height:190px; position:relative; overflow:hidden
+  }
+  .logo{
+    width:64px;height:64px;border-radius:16px;background:#10183b;border:1px solid var(--stroke);
+    padding:10px; object-fit:contain; box-shadow:0 6px 18px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.05)
+  }
+  .h3{margin:0 0 4px; font-size:16px}
+  .slogan{font-size:12px;color:#cfe2ff;margin:2px 0 6px}
+  .rows{font-size:13px; color:var(--muted)}
+  .rows b{color:#dde6ff}
+  .meta{margin-top:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+
+  /* Apply Now — яркая, мягко пульсирующая */
+  .apply{
+    background: linear-gradient(135deg,#6bff7f,#5fe371);
+    color:#0b0f1f;
+    border:none;
+    padding:12px 16px;
+    border-radius:12px;
+    font-weight:800;
+    box-shadow: 0 6px 18px rgba(255,179,107,.35), inset 0 0 0 1px rgba(255,255,255,.25);
+    transition: transform .15s ease, box-shadow .15s ease, filter .2s ease;
+  }
+  .apply:hover{ transform: translateY(-1px); box-shadow:0 10px 22px rgba(255,179,107,.45), inset 0 0 0 1px rgba(255,255,255,.35)}
+  .apply:active{ transform: translateY(0); filter: brightness(.96) }
+  .apply:focus-visible{ outline:2px solid #97fc68; outline-offset:2px; }
+
+  .pulse{ animation: glowPulse 2.2s ease-in-out infinite; }
+  @keyframes glowPulse{
+    0% {
+  box-shadow: 0 6px 18px rgba(151,252,104,0.35), inset 0 0 0 1px rgba(255,255,255,0.25);
+  filter: brightness(1.00);
+}
+50% {
+  box-shadow: 0 12px 28px rgba(151,252,104,0.60), 0 0 14px rgba(151,252,104,0.45), inset 0 0 0 1px rgba(255,255,255,0.35);
+  filter: brightness(1.06);
+}
+100% {
+  box-shadow: 0 6px 18px rgba(151,252,104,0.35), inset 0 0 0 1px rgba(255,255,255,0.25);
+  filter: brightness(1.00);
+}
+  }
+  @media (prefers-reduced-motion: reduce){ .pulse{ animation:none; } }
+
+  .ghost{font-size:12px; color:#9eb0d6}
+
+  /* STICKY MOBILE CTA */
+  .sticky{
+    position:fixed; left:0; right:0; bottom:0; z-index:50;
+    background:linear-gradient(180deg,#0f1633,#0b1127);
+    border-top:1px solid var(--stroke); padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+    display:none; gap:10px; box-shadow:0 -10px 24px rgba(0,0,0,.45)
+  }
+  @media (max-width:760px){ .sticky{display:flex} .cta-row{display:none} }
+  .sticky .btn{flex:1; justify-content:center; padding:12px}
+
+  /* LOAN GUIDE MODAL */
+  .modal{
+    position:fixed; inset:0; z-index:80; display:none; place-items:center;
+    background:rgba(4,8,20,.6); backdrop-filter: blur(6px);
+  }
+  .modal.active{display:grid}
+  .sheet{
+    width:min(920px,92vw); max-height:88vh; overflow:auto;
+    background:linear-gradient(180deg,#141a3a,#0f1431);
+    border:1px solid var(--stroke); border-radius:18px; box-shadow:0 18px 60px rgba(0,0,0,.55);
+  }
+  .sheet header{
+    display:flex; align-items:center; gap:10px; padding:14px 14px; border-bottom:1px solid var(--stroke)
+  }
+  .sheet h2{margin:0; font-size:18px}
+  .back{
+    background:transparent; border:1px solid rgba(255,255,255,.25); color:var(--text);
+    padding:8px 12px; border-radius:10px; font-weight:700; cursor:pointer;
+  }
+  .sheet .content{padding:12px 14px}
+  .info{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  }
+  @media (max-width:860px){ .info{grid-template-columns:1fr} }
+  .box{
+    background:rgba(255,255,255,.03); border:1px solid var(--stroke); border-radius:14px; padding:12px
+  }
+  .box h3{margin:0 0 8px; font-size:15px}
+  .box ul{margin:0; padding-left:18px}
+  .box li{margin:6px 0}
+  .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="pill">SS</div>
+      <div>
+        <h1 class="title">Best Loan Services in Sri Lanka • <span lang="si">ශ්‍රී ලංකාවේ හොඳම ණය සේවා</span></h1>
+        <p class="sub">Fast approval • Transparent terms • Mobile-first • <span lang="si">ඉක්මන් අනුමත • පැහැදිලි නියම • ජංගම අනුකූල</span></p>
+      </div>
+      <div class="cta-row">
+        <!-- OPEN MODAL INSTEAD OF EXTERNAL -->
+        <button class="btn gold" id="openGuide">Loan guide • <span lang="si">ණය මාර්ගෝපදේශය</span></button>
+        <a class="btn" href="https://t.me/virat999bot" target="_blank">TG support • <span lang="si">ඊටී සහාය</span></a>
+      </div>
+    </section>
+
+    <div class="note">
+      💡 <b>If one service doesn’t approve — try another.</b>
+      <span> / <span lang="si">එක සේවාවක් අනුමත නො කළොත් — වෙනත් එකක් අත්හදා බලන්න.</span></span>
+    </div>
+
+    <!-- OFFERS GRID -->
+    <div id="grid" class="grid"></div>
+
+    <!-- small footer tip -->
+    <div style="margin-top:16px;font-size:12px;color:#9eb0d6;background:#101741;border:1px solid var(--stroke);border-radius:14px;padding:12px">
+      Disclaimer: Information only. Always read each service’s terms & conditions. / <span lang="si">තොරතුරු භාවිතයට පමණි. සෑම සේවාවකම නියම සහ කොන්දේසි කියවා තීරණය කරන්න.</span>
+    </div>
+  </div>
+
+  <!-- STICKY CTA (mobile) -->
+  <div class="sticky">
+    <button class="btn gold" id="openGuide_m">Loan guide • <span lang="si">ණය මාර්ගෝපදේශය</span></button>
+    <a class="btn" href="https://t.me/virat999bot" target="_blank">TG support • <span lang="si">ඊටී සහාය</span></a>
+  </div>
+
+  <!-- LOAN GUIDE MODAL -->
+  <div class="modal" id="loanGuide" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+    <div class="sheet">
+      <header>
+        <button class="back" id="closeGuide">← Back</button>
+        <h2 id="guideTitle">Loan Guide • <span lang="si">ණය මාර්ගෝපදේශය</span></h2>
+      </header>
+      <div class="content">
+        <div class="info">
+          <!-- ENGLISH -->
+          <section class="box" lang="en">
+            <h3>✅ Basic eligibility & documents</h3>
+            <ul>
+              <li>Age 20–60, Sri Lanka resident.</li>
+              <li>Valid NIC/passport, active phone number.</li>
+              <li>Stable income (salary, business, gig, or remittance).</li>
+              <li>Active bank account or e-wallet for disbursement.</li>
+              <li>Be ready to upload clear photos/scans of documents.</li>
+            </ul>
+
+            <h3>📈 Improve your approval chances</h3>
+            <ul>
+              <li>Fill the form fully and accurately (no typos, no gaps).</li>
+              <li>Use your real address and current phone number.</li>
+              <li>Keep SMS/phone reachable (they may verify quickly).</li>
+              <li>Start with a smaller amount, then request more later.</li>
+              <li>If one app declines — try 2–3 alternative services.</li>
+            </ul>
+
+            <h3>🔄 If declined — what next?</h3>
+            <ul>
+              <li>Re-check age, geo, documents, and bank/e-wallet validity.</li>
+              <li>Try a different service (each has its own scoring model).</li>
+              <li>Apply at a different time of day if traffic is high.</li>
+              <li>Consider short-term bank credit/overdraft as a fallback.</li>
+            </ul>
+
+            <div class="ctaRow">
+              <a class="btn orange" href="https://onloans.github.io/srilanka/" target="_blank">Open full loan catalog</a>
+              <a class="btn" href="https://t.me/virat999bot" target="_blank">Ask support in TG</a>
+            </div>
+          </section>
+
+          <!-- SINHALA -->
+          <section class="box" lang="si">
+            <h3>✅ මූලික සුදුසුකම් සහ ලේඛන</h3>
+            <ul>
+              <li>වයස අවුරුදු 20–60, ශ්‍රී ලංකා පදිංචිකරු.</li>
+              <li>NIC/ඇඳිරි ලේඛනය (Passport) වලංගු වීම, ක්‍රියාත්මක දුරකථන අංකයක්.</li>
+              <li>ස්ථාවර ආදායමක් (වැටුප/ව්‍යාපාර/ගිග්/විදේශ දායක මුදල්).</li>
+              <li>තැන්පතු සඳහා ක්‍රියාත්මක බැංකු ගිණුමක් හෝ e-wallet එකක්.</li>
+              <li>ලේඛන පැහැදිලි ඡායාරූප/ස්කෑන් ලෙස උඩුගත කිරීමට සූදානම් වන්න.</li>
+            </ul>
+
+            <h3>📈 අනුමැතිය ලැබෙන හැකියාව වර්ධනය කරන හැටි</h3>
+            <ul>
+              <li>ඉල්ලීම සම්පූර්ණයෙන්ම නිවැරදිව පුරවන්න (හැට්ටක්/හිස්තැන් නොවන්න).</li>
+              <li>සුපිරිසිදු ලිපිනයක් සහ දැනට භාවිතා කරන දුරකථන අංකය භාවිතා කරන්න.</li>
+              <li>SMS/කොන්ත්‍රෝල් කතා කිරීමට ලැබෙන දුරකථන අංකය ක්‍රියාත්මක තබා ගන්න.</li>
+              <li>මුලින් කුඩා මුදලකින් ආරම්භ කර පසුව වැඩි දියුණු කරන්න.</li>
+              <li>එක් සේවාවක අසමත් නම් — වෙනත් සේවාව 2–3ක් අත්හදා බලන්න.</li>
+            </ul>
+
+            <h3>🔄 “Declined” ජාවාරමක් ලැබුවොත්?</h3>
+            <ul>
+              <li>වයස/භූගෝල/ලේඛන/බැංකු–e-wallet වලංගුදැයි නැවත පරීක්ෂා කරන්න.</li>
+              <li>වෙනත් සේවාවක් උත්සාහ කරන්න (සෑම සේවාවකම වෙනස් ස්කෝරින් හා නීති).</li>
+              <li>භාරකම් වැඩි වෙලා ඇති වෙලාවකට වෙනස්ව ඉල්ලුම් කරන්න.</li>
+              <li>අවශ්‍ය නම් කාලික බැංකු ණය/overdraft එකක් ද සලකා බලන්න.</li>
+            </ul>
+
+            <div class="ctaRow">
+              <a class="btn orange" href="https://onloans.github.io/srilanka/" target="_blank">Full loan catalog බලන්න</a>
+              <a class="btn" href="https://t.me/virat999bot" target="_blank">TG එකේ සහාය ඉල්ලන්න</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          ⚠️ <b>Tip:</b> If one service doesn’t approve, don’t stop — try others. / <span lang="si">එක් සේවාවක් අනුමත නොකළොත් නවතින එපා — වෙනත් සේවාවක් අත්හදා බලන්න.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  // ====== OFFERS ======
+  const OFFERS = [
+    {
+      name: "Monigo.lk — SF Group",
+      logo: "https://i.ibb.co/YT4hs6d3/fafafa-3.png",
+      slogan: "Money..Within Moment! මොහතකින් ඔබ ලගින්!",
+      amount: "LKR 3,000 – 100,000 (first loan 3,000–20,000)",
+      term: "First loan 14 days • Repeat loans 30 days",
+      time: "Within 1 hour",
+      apr: "Rate varies by scoring",
+      requirements: "Age 20–60, NIC, active phone",
+      age: "20–60",
+      link: "https://link.lead-cash.com/click?pid=1141&offer_id=576",
+      popularity: 91, speed: 9, max: 100000
+    },
+    {
+      name: "Fino.lk — Consumer Lending",
+      logo: "https://s.iimg.su/s/09/eoLcRebVeZIIq8QgTI1Zd0sVDHngABxx61ct59fO.png",
+      slogan: "100% online service • Instant payout after approval",
+      amount: "Up to LKR 20,000 (new) • Up to LKR 100,000 (repeat)",
+      term: "14 days (new 0%/21%) • 30 days (~30%)",
+      time: "3–7 minutes to submit • Same-day approval (SMS confirmation)",
+      apr: "0% for new • 14 days ≈21% • 30 days ≈30%",
+      requirements: "Age 20–60, NIC, stable income, bank account or e-wallet, documents upload",
+      age: "20–60",
+      link: "https://link.lead-cash.com/click?pid=1141&offer_id=400",
+      popularity: 94, speed: 9, max: 100000
+    }
+  ];
+
+  // ====== RENDER CARDS ======
+  const grid = document.getElementById('grid');
+
+  function card(o){
+    return `
+      <article class="card">
+        <img class="logo" src="${o.logo}" alt="${o.name} logo" loading="lazy"
+             onerror="this.style.opacity=0; this.nextElementSibling.style.marginLeft='0'">
+        <div style="display:flex;flex-direction:column;gap:6px;flex:1">
+          <div>
+            <h3 class="h3">${o.name}</h3>
+            ${o.slogan ? `<div class="slogan">🗣️ ${o.slogan}</div>` : ``}
+          </div>
+          <div class="rows">
+            <div>💳 <b>Amount:</b> ${o.amount}</div>
+            <div>⏱️ <b>Approval:</b> ${o.time}</div>
+            <div>📜 <b>Term:</b> ${o.term}</div>
+            <div>📈 <b>Interest:</b> ${o.apr}</div>
+            ${o.age ? `<div>🧍 <b>Age:</b> ${o.age}</div>` : ``}
+            <div>🧾 <b>Requirements:</b> ${o.requirements}</div>
+          </div>
+          <div class="meta">
+            <a class="apply pulse" href="${o.link}" target="_blank">
+              Apply Now • <span lang="si">දැන් ඉල්ලුම් කරන්න</span>
+            </a>
+            <span class="ghost">Pop: ${o.popularity} • Speed: ${o.speed}/10</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  const sorted = [...OFFERS].sort((a,b)=>b.popularity - a.popularity);
+  grid.innerHTML = sorted.map(card).join('');
+
+  // ====== LOAN GUIDE MODAL JS ======
+  const modal = document.getElementById('loanGuide');
+  const open1 = document.getElementById('openGuide');
+  const open2 = document.getElementById('openGuide_m');
+  const close = document.getElementById('closeGuide');
+
+  function openGuide(){ modal.classList.add('active'); document.body.style.overflow='hidden'; }
+  function closeGuide(){ modal.classList.remove('active'); document.body.style.overflow=''; }
+
+  open1?.addEventListener('click', openGuide);
+  open2?.addEventListener('click', openGuide);
+  close?.addEventListener('click', closeGuide);
+  modal.addEventListener('click', (e)=>{ if(e.target===modal) closeGuide(); });
+  window.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && modal.classList.contains('active')) closeGuide(); });
+</script>
+</body>
+</html>
